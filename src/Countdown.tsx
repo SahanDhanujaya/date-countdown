@@ -123,10 +123,10 @@ export default function PremiumCountdown(props: PremiumCountdownProps) {
   const {
     targetDate = "2026-09-19",
     targetTime = "10:00",
-    eventTitle = "The Big Launch Event",
-    eventDescription = "Join us!",
+    eventTitle = "Days Remaining Until The Party!",
+    eventDescription = "Let's Celebrate!",
     eventLocation = "Online",
-    calendarEventName = "The Big Launch Event",
+    calendarEventName = "Party Day",
     layout = "horizontal",
     gridColumns = 2,
     cardSize = 130,
