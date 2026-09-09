@@ -762,7 +762,12 @@ export default function PremiumCountdown(props: PremiumCountdownProps) {
         <div
           className="countdown-cards-container"
           style={{
-            display: "flex",
+            display: layout === "grid" ? "grid" : "flex",
+            flexDirection: layout === "vertical" ? "column" : "row",
+            gridTemplateColumns:
+              layout === "grid"
+                ? `repeat(${Math.max(1, Math.floor(gridColumns))}, minmax(60px, ${cardSize}px))`
+                : undefined,
             justifyContent: "center",
             alignItems: "center",
             gap: cardGap,
